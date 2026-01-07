@@ -1,0 +1,26 @@
+{
+    "name": "discordthings-api",
+    "version": "1.1.0",
+    "description": "Official API Wrapper for DiscordThings.com",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "discord",
+        "botlist",
+        "discordthings",
+        "api",
+        "wrapper",
+        "stats"
+    ],
+    "author": "DiscordThings",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.6.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/discordthings/npm-package.git"
+    }
+}
