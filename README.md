@@ -1,4 +1,4 @@
-# 🚀 DiscordThings API Wrapper
+# DiscordThings API Wrapper
 
 [![npm version](https://img.shields.io/npm/v/discordthings-api.svg)](https://www.npmjs.com/package/discordthings-api)
 [![license](https://img.shields.io/npm/l/discordthings-api.svg)](https://github.com/wdiscordthings/discordthings-api/blob/master/LICENSE)
@@ -8,20 +8,20 @@ The official Node.js library for interacting with the [DiscordThings.com](https:
 
 ---
 
-## ✨ Features
+## Features
 
-- 📊 **Post Stats**: Keep your bot's server and shard count up to date.
-- 🗳️ **Vote Verification**: Reward your users by checking if they've voted for your bot.
-- ⚡ **Command Sync**: Push your bot's Slash Commands directly to our platform for better visibility.
-- 🛠️ **Lightweight**: Zero dependencies (only `axios`).
+- **Post Stats**: Keep your bot's server and shard count up to date.
+- **Vote Verification**: Reward your users by checking if they've voted for your bot.
+- **Command Sync**: Push your bot's Slash Commands directly to our platform for better visibility.
+- **Lightweight**: Zero dependencies (only `axios`).
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install discordthings-api
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 First, obtain your **API Token** from your [Developer Profile](https://discordthings.com/dashboard) on DiscordThings.
 
@@ -39,9 +39,9 @@ const BOT_ID = '123456789012345678'; // Your Bot ID
 async function updateStats() {
     try {
         await dthings.postStats(BOT_ID, 1250);
-        console.log('✅ Stats updated on DiscordThings!');
+        console.log('Stats updated on DiscordThings!');
     } catch (err) {
-        console.error('❌ Error updating stats:', err.message);
+        console.error('Error updating stats:', err.message);
     }
 }
 ```
@@ -53,12 +53,12 @@ async function checkVote(userId) {
         const result = await dthings.checkVote(BOT_ID, userId);
         
         if (result.voted) {
-            console.log('🎉 User has voted!');
+            console.log('User has voted!');
         } else {
-            console.log('⏳ User hasn\'t voted in the last 12 hours.');
+            console.log('User hasn\'t voted in the last 12 hours.');
         }
     } catch (err) {
-        console.error('❌ Error checking vote:', err.message);
+        console.error('Error checking vote:', err.message);
     }
 }
 ```
@@ -81,14 +81,14 @@ async function syncCommands() {
 
     try {
         await dthings.syncCommands(BOT_ID, commands);
-        console.log('📡 Commands synced successfully!');
+        console.log('Commands synced successfully!');
     } catch (err) {
-        console.error('❌ Sync failed:', err.message);
+        console.error('Sync failed:', err.message);
     }
 }
 ```
 
-## 📖 API Reference
+## API Reference
 
 ### `new DiscordThings(token, [options])`
 - `token` (String): Your personal API Token.
@@ -109,4 +109,4 @@ async function syncCommands() {
 
 ---
 
-Built with ❤️ by the [DiscordThings](https://discordthings.com) Team.
+Built with love by the [DiscordThings](https://discordthings.com) Team.
